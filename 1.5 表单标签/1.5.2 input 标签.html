@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.5.2 input 标签</title>
+</head>
+
+<body>
+    <!-- 各种输⼊控件,单⾏⽂本框,按钮,单选框,复选框.
+        • type(必须有),取值种类很多,button,checkbox,text,file,image,password,radio等.
+        • name:给input起了个名字.尤其是对于单选按钮,具有相同的name才能多选⼀.
+        • value:input中的默认值.
+        • checked:默认被选中.(⽤于单选按钮和多选按钮 -->
+
+    <!-- 文本框 -->
+    <input type="text">
+    <br>
+
+    <!-- 密码框 -->
+    <input type="password">
+    <br>
+
+    <!-- 单选框 -->
+    <!-- 性别 -->
+    <input type="radio" name="sex">男
+    <input type="radio" name="sex" checked="checked">女
+    <!-- 单选框之间必须具备相同的name属性,才能实现多选⼀效果. -->
+    <br>
+
+    <!-- 复选框 -->
+    <input type="checkbox"> 吃饭 <input type="checkbox"> 睡觉 <input type="checkbox"> 打游戏
+    <br>
+
+    <!-- 普通按钮 -->
+    <input type="button" value="我是个按钮">
+    <input type="button" value="我是个按钮" onclick="alert('hello')">
+    <br>
+
+    <!-- 提交按钮 -->
+    <form action="text.html">
+        <input type="text" name="username">
+        <input type="submit" value="提交">
+    </form>
+    <!-- 提交按钮必须放到form标签内.点击后就会尝试给服务器发送请求 -->
+</body>
+
+</html>
